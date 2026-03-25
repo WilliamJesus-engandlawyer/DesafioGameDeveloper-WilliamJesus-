@@ -1,10 +1,12 @@
 # DesafioGameDeveloper-WilliamJesus-
 desafiogamev
+
 ## 🎮 Explicando o projeto
 
 <p align="center">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/0dJSj97pIyI" 
-  title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+  <a href="https://www.youtube.com/watch?v=0dJSj97pIyI">
+    <img src="https://img.youtube.com/vi/0dJSj97pIyI/0.jpg" alt="Demonstração do jogo"/>
+  </a>
 </p>
-[Clique aqui para jogar sem abrir o Unity](https://drive.google.com/drive/folders/1RExN778AbatEEJ_cyOzkQ58Qb7ISUW2V?usp=drive_link)
 
+[Clique aqui para jogar sem abrir o Unity](https://drive.google.com/drive/folders/1RExN778AbatEEJ_cyOzkQ58Qb7ISUW2V?usp=drive_link)

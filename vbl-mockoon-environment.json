@@ -1,0 +1,177 @@
+{
+  "uuid": "c6eaa980-c17d-4713-af97-65a7e9499709",
+  "lastMigration": 33,
+  "name": "VBL Smart Crossing API",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3000,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "35567fe3-aca8-4846-8cd8-0d3a71ccdff5",
+      "type": "http",
+      "documentation": "Retorna estado atual e predições de tráfego/clima. Alterne entre as respostas para simular diferentes níveis do jogo.",
+      "method": "get",
+      "endpoint": "v1/traffic/status",
+      "responses": [
+        {
+          "uuid": "c6aebe8e-fc18-451c-8c72-08e02a1cf81d",
+          "body": "{\n  \"current_status\": {\n    \"vehicleDensity\": 0.3,\n    \"averageSpeed\": 40,\n    \"weather\": \"sunny\"\n  },\n  \"predicted_status\": [\n    {\n      \"estimated_time\": 5000,\n      \"predictions\": {\n        \"vehicleDensity\": 0.4,\n        \"averageSpeed\": 45,\n        \"weather\": \"sunny\"\n      }\n    },\n    {\n      \"estimated_time\": 10000,\n      \"predictions\": {\n        \"vehicleDensity\": 0.5,\n        \"averageSpeed\": 50,\n        \"weather\": \"clouded\"\n      }\n    },\n    {\n      \"estimated_time\": 15000,\n      \"predictions\": {\n        \"vehicleDensity\": 0.3,\n        \"averageSpeed\": 35,\n        \"weather\": \"clouded\"\n      }\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Nível 1 — Trânsito leve, tempo limpo",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "60c9a051-ab39-433f-ab2b-b9c2dc26e3bd",
+          "body": "{\n  \"current_status\": {\n    \"vehicleDensity\": 0.5,\n    \"averageSpeed\": 60,\n    \"weather\": \"clouded\"\n  },\n  \"predicted_status\": [\n    {\n      \"estimated_time\": 5000,\n      \"predictions\": {\n        \"vehicleDensity\": 0.6,\n        \"averageSpeed\": 65,\n        \"weather\": \"clouded\"\n      }\n    },\n    {\n      \"estimated_time\": 10000,\n      \"predictions\": {\n        \"vehicleDensity\": 0.7,\n        \"averageSpeed\": 55,\n        \"weather\": \"foggy\"\n      }\n    },\n    {\n      \"estimated_time\": 15000,\n      \"predictions\": {\n        \"vehicleDensity\": 0.6,\n        \"averageSpeed\": 50,\n        \"weather\": \"light rain\"\n      }\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Nível 2 — Trânsito médio, nublado virando chuva",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "2a10a215-988a-48e1-9e99-8b0f973f2e20",
+          "body": "{\n  \"current_status\": {\n    \"vehicleDensity\": 0.7,\n    \"averageSpeed\": 70,\n    \"weather\": \"light rain\"\n  },\n  \"predicted_status\": [\n    {\n      \"estimated_time\": 4000,\n      \"predictions\": {\n        \"vehicleDensity\": 0.8,\n        \"averageSpeed\": 75,\n        \"weather\": \"light rain\"\n      }\n    },\n    {\n      \"estimated_time\": 8000,\n      \"predictions\": {\n        \"vehicleDensity\": 0.9,\n        \"averageSpeed\": 65,\n        \"weather\": \"heavy rain\"\n      }\n    },\n    {\n      \"estimated_time\": 12000,\n      \"predictions\": {\n        \"vehicleDensity\": 1.0,\n        \"averageSpeed\": 80,\n        \"weather\": \"heavy rain\"\n      }\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Nível 3 — Trânsito denso, chuva pesada",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "58d0f38f-1669-4cc0-889f-f06d64435e2e",
+          "body": "{\n  \"current_status\": {\n    \"vehicleDensity\": 0.9,\n    \"averageSpeed\": 90,\n    \"weather\": \"heavy rain\"\n  },\n  \"predicted_status\": [\n    {\n      \"estimated_time\": 3000,\n      \"predictions\": {\n        \"vehicleDensity\": 1.0,\n        \"averageSpeed\": 95,\n        \"weather\": \"heavy rain\"\n      }\n    },\n    {\n      \"estimated_time\": 6000,\n      \"predictions\": {\n        \"vehicleDensity\": 1.0,\n        \"averageSpeed\": 100,\n        \"weather\": \"heavy rain\"\n      }\n    },\n    {\n      \"estimated_time\": 9000,\n      \"predictions\": {\n        \"vehicleDensity\": 1.0,\n        \"averageSpeed\": 100,\n        \"weather\": \"heavy rain\"\n      }\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Nível 4 — Caos total, velocidade máxima",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "b73236e5-ec25-4364-b870-cbc8c0d70707",
+          "body": "{\n  \"error\": \"Internal Server Error\",\n  \"message\": \"Falha ao obter dados de tráfego.\"\n}",
+          "latency": 200,
+          "statusCode": 500,
+          "label": "Erro 500 — Para testar resiliência",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "35567fe3-aca8-4846-8cd8-0d3a71ccdff5"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    }
+  ],
+  "proxyReqHeaders": [],
+  "proxyResHeaders": [],
+  "data": [],
+  "callbacks": []
+}

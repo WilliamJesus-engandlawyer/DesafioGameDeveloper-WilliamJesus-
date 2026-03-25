@@ -1,6 +1,4 @@
 # DesafioGameDeveloper-WilliamJesus-
-desafiogamev
-
 ## 🎮 Explicando o projeto
 
 <p align="center">

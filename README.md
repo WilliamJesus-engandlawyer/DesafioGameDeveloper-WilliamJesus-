@@ -1,5 +1,5 @@
 # DesafioGameDeveloper-WilliamJesus-
-## 🎮 Explicando o projeto
+## 🎮 Explicando o projeto apenas clique na imagem que vai abrir o video
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=0dJSj97pIyI">
